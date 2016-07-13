@@ -10,7 +10,7 @@ describe('Favorite Food Filter', function () {
 			'favoriteFood': 'Beer'
 		},
 	];
-
+	beforeEach(module('app'));
 	beforeEach(inject(function ($filter) {
 			favoriteFood = $filter('favoriteFood');
 	}));
